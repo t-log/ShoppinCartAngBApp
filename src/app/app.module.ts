@@ -5,13 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UserPageComponent } from './user-page/user-page.component';
 
-const myRoute:Routes=[{path:"",component:AdminPageComponent}]
+const myRoute:Routes=[{path:"",component:AdminPageComponent},
+                      {path:"user",component:UserPageComponent}]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminPageComponent
+    AdminPageComponent,
+    UserPageComponent
   ],
   imports: [
     BrowserModule,
