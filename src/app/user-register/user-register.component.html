@@ -7,30 +7,30 @@
                 </div>
                 <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="name" [(ngModel)]="name" id="" class="form-control">
                 </div>
                 <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <textarea class="form-control" name="" id="" cols="10" rows="3"></textarea>
+                    <textarea class="form-control" name="address" [(ngModel)]="address" id="" cols="10" rows="3"></textarea>
                 </div>
                 <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Phone No</label>
-                    <input type="number" name="" id="" class="form-control">
+                    <input type="text" name="phoneNo" [(ngModel)]="phoneNo" id="" class="form-control">
                 </div>
                 <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Email</label>
-                    <input type="email" name="" id="" class="form-control">
+                    <input type="email" name="email" [(ngModel)]="email" id="" class="form-control">
                 </div>
                 <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input type="password" name="" [(ngModel)]="password" id="" class="form-control">
                 </div>
                 <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Confirm password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input type="password" name="password" [(ngModel)]="confirmPassword" id="" class="form-control">
                 </div>
                 <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Register</button>
+                    <button (click)="readValues()" class="btn btn-success">Register</button>
                 </div>
                 <div class="mt-2 col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <a routerLink="/user">User Login</a>
