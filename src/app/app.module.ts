@@ -12,13 +12,17 @@ import { ProductsPageComponent } from './products-page/products-page.component';
 import { ViewAllProductComponent } from './view-all-product/view-all-product.component';
 import { NavBarProductsComponent } from './nav-bar-products/nav-bar-products.component';
 import { SearchProductComponent } from './search-product/search-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
+import { NavBarUserComponent } from './nav-bar-user/nav-bar-user.component';
 
 const myRoute:Routes=[{path:"",component:AdminPageComponent},
                       {path:"user",component:UserPageComponent},
                       {path:"register",component:UserRegisterComponent},
                       {path:"products",component:ProductsPageComponent},
                       {path:"view",component:ViewAllProductComponent},
-                      {path:"search",component:SearchProductComponent}]
+                      {path:"search",component:SearchProductComponent},
+                      {path:"userprofile",component:ViewProfileComponent}]
 
 @NgModule({
   declarations: [
@@ -29,14 +33,17 @@ const myRoute:Routes=[{path:"",component:AdminPageComponent},
     ProductsPageComponent,
     ViewAllProductComponent,
     NavBarProductsComponent,
-    SearchProductComponent
+    SearchProductComponent,
+    ViewProfileComponent,
+    NavBarUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

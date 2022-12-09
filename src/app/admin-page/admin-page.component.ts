@@ -17,7 +17,6 @@ export class AdminPageComponent {
     let adminData:any = {"username":this.userName,"password":this.password}
     console.log(adminData)
     if (this.userName =="admin" && this.password =="12345") {
-      alert("Valid Login")
       this.router.navigate(['/products'])
       
     }else

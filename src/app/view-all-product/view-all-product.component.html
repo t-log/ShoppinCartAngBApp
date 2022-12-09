@@ -13,11 +13,11 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                        <td>Sample</td>
-                        <td>Sample</td>
+                      <tr *ngFor="let i of productData">
+                        <td>{{i.name}}</td>
+                        <td>{{i.category}}</td>
+                        <td>{{i.description}}</td>
+                        <td>{{i.price}}</td>
                       </tr>
                     </tbody>
                   </table>
